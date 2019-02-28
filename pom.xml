@@ -11,6 +11,7 @@
     <module>algorithm</module>
     <module>design-pattern</module>
   </modules>
+
   <packaging>pom</packaging>
 
   <name>Eagle</name>
