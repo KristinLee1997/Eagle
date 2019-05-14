@@ -12,6 +12,7 @@
         <module>algorithm</module>
         <module>design-pattern</module>
         <module>architecture</module>
+        <module>common-utils</module>
     </modules>
 
     <packaging>pom</packaging>
