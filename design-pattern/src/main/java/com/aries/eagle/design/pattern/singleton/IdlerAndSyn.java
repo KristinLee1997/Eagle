@@ -4,7 +4,7 @@ package com.aries.eagle.design.pattern.singleton;
  * @author lihang17
  * @version 1.0
  * @date 2019-08-27 06:42
- * 单例模式--懒汉式+同步方法
+ * 单例模式--懒汉式+同步方法【线程安全，但效率低】
  */
 public class IdlerAndSyn {
     private IdlerAndSyn() {

@@ -16,7 +16,12 @@ public class IdlerAndDoubleSynAbortSort {
         if (idlerAndDoubleSynAbortSort == null) {
             synchronized (IdlerAndDoubleSynAbortSort.class) {
                 if (idlerAndDoubleSynAbortSort == null) {
-                    idlerAndDoubleSynAbortSort = new IdlerAndDoubleSynAbortSort();
+                    idlerAndDoubleSynAbortSort = new IdlerAndDoubleSynAbortSort();   // 如果不加volatile，这里可能存在线程安全问题
+                    /**
+                     * 1 memory=allocate();// 分配内存 相当于c的malloc
+                     * 2 ctorInstanc(memory) //初始化对象
+                     * 3 s=memory //设置s指向刚分配的地址
+                     */
                 }
             }
         }

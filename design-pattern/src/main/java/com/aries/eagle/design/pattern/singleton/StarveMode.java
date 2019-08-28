@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationTargetException;
  * @author lihang17
  * @version 1.0
  * @date 2019-08-26 16:13
- * 单例模式--饿汉式
+ * 单例模式--饿汉式【线程安全】【缺点】：类加载时就初始化，浪费内存，容易产生垃圾对象。
  */
 public class StarveMode {
-    private static StarveMode starveMode = new StarveMode();
+    private static final StarveMode starveMode = new StarveMode();
 
     private StarveMode() {
 
