@@ -4,7 +4,7 @@ package com.aries.eagle.design.pattern.singleton;
  * @author lihang17
  * @version 1.0
  * @date 2019-08-27 10:12
- * 单例模式--懒汉式+双重校验所
+ * 单例模式--懒汉式+双重校验锁
  */
 public class IdlerAndDoubleSyn {
     private IdlerAndDoubleSyn() {
