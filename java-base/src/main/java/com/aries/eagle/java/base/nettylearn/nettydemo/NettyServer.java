@@ -1,4 +1,4 @@
-package com.aries.eagle.java.base.nettydemo;
+package com.aries.eagle.java.base.nettylearn.nettydemo;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelHandlerContext;

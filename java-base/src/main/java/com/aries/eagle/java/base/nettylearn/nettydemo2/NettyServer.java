@@ -1,12 +1,10 @@
-package com.aries.eagle.java.base.nettydemo2;
+package com.aries.eagle.java.base.nettylearn.nettydemo2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.util.AttributeKey;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
@@ -20,6 +18,7 @@ public class NettyServer {
                 .group(boosGroup, workerGroup)                             // group：给引导类配置两大线程，这个引导类的线程模型也就定型了。
                 .channel(NioServerSocketChannel.class)                     // NioServerSocketChannel：指定具体的I/O模型
                 .childHandler(new ChannelInitializer<NioSocketChannel>() { // ChannelInitializer：主要就是定义后续每条连接的数据读写，业务处理逻辑
+                    @Override
                     protected void initChannel(NioSocketChannel ch) {      // NioSocketChannel：Netty对NIO类型的连接的抽象
                     }
                 });

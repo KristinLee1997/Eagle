@@ -1,4 +1,4 @@
-package com.aries.eagle.java.base.nettydemo;
+package com.aries.eagle.java.base.nettylearn.nettydemo;
 
 import java.io.IOException;
 import java.io.InputStream;
